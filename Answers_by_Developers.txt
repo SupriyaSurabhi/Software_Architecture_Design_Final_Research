@@ -1,0 +1,37 @@
+1)Can you describe any instances where you noticed architectural deterioration (AD) in the code, and how it impacted the accumulation of technical debt (TD) over time?
+
+Answer: A system's inability to grow, maintain, or adapt over time is a common sign of architectural decay. In my experience, AD was brought on by a monolithic codebase with closely coupled components, which increased technical debt. Because modifications to one aspect of the system have implications on other parts, adding new features or resolving faults frequently leads to the creation of greater debt when the code becomes rigid and inflexible. Because of the stronger coupling (CBO) and weaker cohesion (LCOM) caused by this increased complexity, it is more difficult to restructure the code without creating new problems.
+
+2)Do you feel that the monolithic system architecture or microservices approach contributed more to the buildup of technical debt? Could you explain why?
+
+According to my observations, the two architectures make distinct contributions to technical debt. The massive, tightly-coupled codebase of the monolithic system tends to acquire TD more quickly. Future development can be slowed down by hidden dependencies that arise from minor modifications made to one component of the system. Microservices, on the other hand, solve some of these problems by separating the code, but they also come with a price, especially when it comes to complicated inter-service communication and data consistency difficulties. To handle the architectural complexity of microservices, more reliable tools and monitoring are needed.
+
+3)How did the flexibility or rigidity of the system architecture (monolithic vs microservices) affect your ability to manage or mitigate technical debt?
+
+Because of the rigidity of the monolithic system, addressing technical debt was difficult because modifications frequently had far-reaching effects on the system, necessitating intensive testing and coordination. Microservices, on the other hand, gave me greater freedom because I could concentrate on certain services rather than the entire codebase. Microservices were helpful in many ways, but they also introduced additional layers of complexity that, if not properly managed, may result in technological debt. This flexibility, however, came with the difficulty of maintaining consistent performance and managing distributed systems.
+
+4)How do you typically assess the quality of the code in terms of design metrics like cohesion (LCOM), complexity (WMC), and coupling (CBO)?
+
+I evaluate cohesion, complexity, and coupling using a mix of code reviews and static analysis techniques. For example, I frequently use LCOM to determine whether courses exhibit low cohesiveness by being overly reliant on one another. While CBO can show whether classes or modules have too many dependencies, raising the possibility of cascading failures, WMC assists me in identifying complex classes that are more difficult to maintain. To stop technical debt from building up, these metrics act as warning signs for parts of the code that may need to be refactored.
+
+5)Can you share any examples where high LCOM, WMC, or CBO values indicated a problem in the system, either in the monolithic or microservices architecture?
+We had a class in a previous monolithic system that had low LCOM and high WMC. This class had evolved into a "god class," handling a variety of unconnected responsibilities, making it challenging to expand or change without creating new issues. Its low cohesion (LCOM) made the codebase hard for novice engineers to understand, and its complexity (WMC) made testing tough. This class's maintainability and technical debt were greatly enhanced by breaking it up into smaller, more targeted classes.
+
+
+6)Have you used any automated tools or metrics to monitor these design aspects in real time? If so, which ones and how effective have they been?
+
+Yes, I have kept an eye on these design elements using tools like SonarQube and CodeClimate. These tools give input on LCOM, WMC, CBO, and other metrics while also continuously evaluating the codebase. They can cause alarms when thresholds are crossed and assist in locating "hot spots" in the code that are likely to result in technical debt. I've found that these tools have been quite helpful in tracking my technical debt over time and setting priorities for my growth.
+
+7)In your experience, how has unmanaged technical debt (TD) impacted the performance and scalability of the system in both monolithic and microservices architectures?
+
+In both architectures, unmanaged technological debt has directly impacted system performance. Performance bottlenecks and shorter development cycles were the results of rising TD in monolithic systems. For instance, as the system evolved, it became more difficult to optimize inefficient algorithms and poorly structured code. Unmanaged debt frequently causes performance problems in microservices because of ineffective service-to-service communication or out-of-date libraries. This eventually makes it harder to scale services and raises the cost of performance improvement.
+
+
+8)What are the long-term consequences you've observed when technical debt was not addressed in time? How did it affect the system's maintainability?
+
+Inadequate resolution of technical debt resulted in slower development, more bugs, and more maintenance expenses. Monolithic systems resulted in a "legacy" system that was challenging to update or expand without running the risk of damaging other components. Inadequate refactoring in microservices led to deployment problems and inconsistent services. Both architectures become more challenging to maintain over time, which resulted in longer release cycles and lower developer productivity.
+
+
+9)How do you prioritize technical debt and architectural issues to prevent future system failures or slowdowns?
+
+I use a practical strategy to rank technical debt. I start by fixing problems that are impeding ongoing development or producing bugs right away. After that, I concentrate on reworking regions that have low cohesion (LCOM) or high complexity (WMC). I rank architectural challenges according to their long-term effects on performance, scalability, and maintainability. For example, in order to prevent further slowdowns, I will give priority to disconnecting a component whose strong coupling (CBO) makes it too difficult to modify. In order to guarantee that we always allot time for refactoring, I also collaborate closely with the team to incorporate technical debt into our routine sprint planning.
