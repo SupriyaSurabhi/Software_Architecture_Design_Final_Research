@@ -1,0 +1,20 @@
+Questionnaire for Developer 
+
+RQ1: Connection Between Architectural Deterioration and Technical Debt
+
+1. Can you describe any instances where you noticed architectural deterioration (AD) in the code, and how it impacted the accumulation of technical debt (TD) over time?
+2. Do you feel that the monolithic system architecture or microservices approach contributed more to the buildup of technical debt? Could you explain why?
+3. How did the flexibility or rigidity of the system architecture (monolithic vs microservices) affect your ability to manage or mitigate technical debt?
+
+RQ2: Measuring Technical Debt and Architectural Smells
+
+4. How do you typically assess the quality of the code in terms of design metrics like cohesion (LCOM), complexity (WMC), and coupling (CBO)?
+5. Can you share any examples where high LCOM, WMC, or CBO values indicated a problem in the system, either in the monolithic or microservices architecture?
+6. Have you used any automated tools or metrics to monitor these design aspects in real time? If so, which ones and how effective have they been?
+
+
+RQ3: Long-term Effects of Unmanaged TD and AD
+
+7. In your experience, how has unmanaged technical debt (TD) impacted the performance and scalability of the system in both monolithic and microservices architectures?
+8. What are the long-term consequences you've observed when technical debt was not addressed in time? How did it affect the system's maintainability?
+9. How do you prioritize technical debt and architectural issues to prevent future system failures or slowdowns?
