@@ -1,0 +1,22 @@
+Questionnaire for Architects
+
+RQ1: Connection Between Architectural Deterioration and Technical Debt
+
+1.From the viewpoint of architecture, how do you see the relationship between an accumulation of technological debt (TD) and architectural decay (AD)?
+2.What effect does the choice between monolithic and microservices design have on the rate at which architectural deterioration and technical debt accumulate in your systems?
+3.Which architectural patterns, in your opinion, are the most effective in lowering technical debt without sacrificing flexibility and scalability?
+
+
+
+RQ2: Measuring Technical Debt and Architectural Smells
+
+4. What role do object-oriented design metrics (LCOM, WMC, CBO) play in your decision-making process for monitoring architectural health?
+5. Have you implemented any specific strategies or tools for quantifying architectural smells or technical debt in the system? How do these metrics guide your architectural decisions?
+6. How do you evaluate when it's time to refactor or migrate from one architecture to another based on these design metrics?
+
+
+RQ3: Long-term Effects of Unmanaged TD and AD
+
+7. How does unmanaged technical debt affect the long-term scalability, performance, and maintainability of systems in both monolithic and microservices architectures?
+8. Could you provide an example of a system where the accumulation of architectural deterioration led to significant challenges in system performance or user experience?
+9. From your architectural perspective, how do you balance the trade-off between adding new features and managing technical debt in the long run?
